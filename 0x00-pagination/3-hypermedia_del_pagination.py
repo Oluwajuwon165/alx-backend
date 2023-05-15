@@ -11,6 +11,7 @@ from typing import List, Dict
 class Server:
     """Server class to paginate a database of popular baby names.
     """
+
     DATA_FILE = "Popular_Baby_Names.csv"
 
     def __init__(self):
@@ -41,7 +42,7 @@ class Server:
 
     def get_hyper_index(self, index: int = None,
                         page_size: int = 10) -> Dict:
-        """ return all data"""
+        """Return all data"""
 
         if index is None:
             index = 0
